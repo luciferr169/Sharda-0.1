@@ -1,0 +1,437 @@
+/* brand color */
+
+:root {
+  --blue: #007bff;
+}
+
+/* fonts  used  */
+
+@font-face {
+  font-family: Lblack;
+  src: url(font/lato/black.ttf)
+}
+
+@font-face {
+  font-family: Lbold;
+  src: url(font/lato/Bold.ttf)
+}
+
+@font-face {
+  font-family: regular;
+  src: url(font/lato/Regular.ttf)
+}
+
+.black {
+  font-family: Lblack;
+}
+
+.bold {
+  font-family: Lbold;
+}
+
+.regular {
+  font-family: regular;
+}
+
+/* global  */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* navigation  */
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.navfont {
+  font-size: 17px;
+  margin-right: 40px;
+}
+
+/* hero section  */
+
+#hero {
+  width: 100%;
+ /* height: auto; */
+  height:590px;
+  /* margin-top: 5rem; */
+}
+
+/* news section/temporary  */
+
+#news {
+  margin-top: 43px;
+  margin-bottom: 50px;
+}
+
+#tempo {
+  color: #de4c4c;
+  font-size: 18px;
+}
+
+/* Affliate */
+
+#affliate {
+  margin-bottom: 84px;
+}
+
+.affliateHeading {
+  font-size: 30px;
+}
+
+/* member count section */
+
+#member {
+  background: url(images/member/backgroundGrad.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 38vh;
+}
+
+.firstCol, .secondCol, .thirdCol {
+  font-size: 36px;
+  color: white;
+  padding-top: 5rem;
+}
+
+/* about Section  */
+
+#about {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.mainAboutHeading {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.aboutContent {
+  font-size: 21px;
+  /* margin-top: 77px; */
+}
+
+.firstAboutRow, .secondAboutRow, .thirdAboutRow, .fourthAboutRow {
+  margin-bottom: 77px;
+}
+
+.aboutHeading {
+  margin-top: 40px;
+  margin-bottom: 65px;
+  font-size: 36px;
+}
+
+/* feature */
+
+#feature {
+  margin-top: 7rem;
+}
+
+#feature, #achievement, #gallery {
+  margin-bottom: 120px;
+}
+
+.featureHeading, .achievementHeading, .galleryHeading {
+  font-size: 36px;
+  margin-bottom: 77px;
+}
+
+.featureImg {
+    margin: 14px 0px;
+   
+    box-shadow: 3px 3px 12px 0px #cccccc;
+    border-radius: 21px;
+}
+
+.featureImg:hover
+{
+    border-radius: 26px;
+    box-shadow: 3px 3px 12px 0px #cccccc;
+   
+}
+
+/* achievement  */
+
+.achievementContent {
+  font-size: 21px;
+  margin-top: 2rem;
+}
+
+.container1 {
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+
+/* gallery  */
+
+.galleryBtn {
+  margin-top: 2rem;
+}
+
+/* footer  */
+
+.footerLink {
+  font-size: 21px;
+  color: black;
+  text-decoration: none;
+  line-height: 1.7em;
+}
+
+.footerLink:hover {
+  font-size: 21px;
+  color: black;
+  text-decoration: none;
+}
+
+.copyright {
+  color: white;
+  background-color: black;
+  padding: 2rem;
+}
+
+h4 {
+  font-size: 21px;
+}
+
+/* utilities  */
+
+.outlineBtn {
+  position: relative;
+  border-radius: 27px;
+  color: #37b896;
+  width: 230px;
+  height: 54px;
+  font-size: 21px;
+  left: 28vw;
+}
+
+.filledBtn {
+  position: relative;
+  border-radius: 27px;
+  background-color: #37b896;
+  color: white;
+  width: 230px;
+  height: 54px;
+  font-size: 21px;
+  left: 23vw;
+  margin-top: 2rem;
+}
+
+.filledBtn:hover {
+  background-color: white;
+  color: #37b896;
+  margin-top: 2rem;
+}
+
+/* media query */
+
+/* mobile version  */
+
+@media screen and (max-width: 900px) {
+  #hero {
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+  }
+  .schoolName {
+    font-size: 12px;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .affliateHeading {
+    font-size: 20px;
+  }
+  
+  #member {
+  height: 30vh;
+}
+  
+  .firstCol, .secondCol, .thirdCol {
+    font-size: 18px;
+    color: white;
+  }
+  #about {
+    margin-top: 112px;
+    position: relative;
+    margin-bottom: 0px;
+  }
+  .mainAboutHeading {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+  .aboutContent {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  .firstAboutRow, .secondAboutRow, .thirdAboutRow {
+    margin-bottom: 24px;
+  }
+  .achievementHeading, .galleryHeading {
+    margin-bottom: 40px;
+  }
+  #feature, #achievement, #gallery {
+    margin-bottom: 40px;
+  }
+  .aboutHeading {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+  .outlineBtn {
+    position: relative;
+    border-radius: 27px;
+    color: #37b896;
+    width: 180px;
+    height: 44px;
+    font-size: 11px;
+    left: 20vw;
+  }
+  .container1 {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+  .filledBtn {
+    position: relative;
+    border-radius: 27px;
+    background-color: #37b896;
+    color: white;
+    width: 180px;
+    height: 44px;
+    font-size: 14px;
+    left: 20vw;
+    margin-top: 2rem;
+  }
+  .firstImgOfGallery {
+    margin-bottom: 2rem;
+  }
+}
+
+/* style for about(html) */
+
+.aboutHeadingPage {
+  margin-bottom: 40px;
+}
+
+.aboutcontentLink {
+  font-size: 21px;
+}
+
+/* style for admisssion.html */
+
+#admission {
+  margin-top: 10rem;
+}
+
+#enrollment {
+  margin: 2rem 0;
+}
+
+.enrollmentContent {
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+.admissionHeading, .schoolUniformHeading, .rulesHeading, .enrollmentHeading {
+  font-size: 21px;
+}
+
+.admissionSubHeading {
+  font-size: 52px;
+}
+
+.updates {
+  color: #de4c4c;
+}
+
+.schoolUniformHeading {
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.uniformCardRowOne, .uniformCardRowTwo {
+  margin-bottom: 2rem;
+  box-shadow: 5px 5px 17px 0px #d4cfcf;
+}
+
+.rulesHeading, .enrollmentHeading {
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Result1 {
+ /* margin-top: 180px; 
+  margin-bottom: 300px;
+  position: relative; */
+}
+filledBtn {
+    position: relative;
+  
+    width: auto;
+    height: 44px;
+    font-size: 18px;
+    margin-top: 2rem;
+  }
+#Result {
+  margin-top: 180px; 
+  margin-bottom: 300px;
+  position: relative;
+}
+
+.mainResulttHeading {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.ResultContent {
+  font-size: 21px;
+  /* margin-top: 77px; */
+}
+.filledBtn {
+    position: relative;
+  
+    width: auto;
+    height: 44px;
+    font-size: 18px;
+    margin-top: 2rem;
+  }
+
